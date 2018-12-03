@@ -45,14 +45,112 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dog.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Dog.Designer.cs">
+      <DependentUpon>Dog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cat.Designer.cs">
+      <DependentUpon>Cat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Buying_Dog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Buying_Dog.Designer.cs">
+      <DependentUpon>Buying_Dog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Buying_Cat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Buying_Cat.Designer.cs">
+      <DependentUpon>Buying_Cat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Buying_Lizard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Buying_Lizard.Designer.cs">
+      <DependentUpon>Buying_Lizard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Buyer_Info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Buyer_Info.Designer.cs">
+      <DependentUpon>Buyer_Info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Seller_info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seller_info.Designer.cs">
+      <DependentUpon>Seller_info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Seller.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seller.Designer.cs">
+      <DependentUpon>Seller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Buyer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Buyer.Designer.cs">
+      <DependentUpon>Buyer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lizard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lizard.Designer.cs">
+      <DependentUpon>Lizard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Welcome_Screen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Welcome_Screen.Designer.cs">
+      <DependentUpon>Welcome_Screen.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Buying_Cat.resx">
+      <DependentUpon>Buying_Cat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Buying_Lizard.resx">
+      <DependentUpon>Buying_Lizard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dog.resx">
+      <DependentUpon>Dog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cat.resx">
+      <DependentUpon>Cat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Buying_Dog.resx">
+      <DependentUpon>Buying_Dog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Buyer_Info.resx">
+      <DependentUpon>Buyer_Info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seller_info.resx">
+      <DependentUpon>Seller_info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seller.resx">
+      <DependentUpon>Seller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Buyer.resx">
+      <DependentUpon>Buyer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lizard.resx">
+      <DependentUpon>Lizard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Welcome_Screen.resx">
+      <DependentUpon>Welcome_Screen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,6 +160,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
