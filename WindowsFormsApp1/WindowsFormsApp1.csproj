@@ -11,6 +11,7 @@
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -23,7 +24,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -97,6 +97,54 @@
     <Compile Include="Buyer_Info.Designer.cs">
       <DependentUpon>Buyer_Info.cs</DependentUpon>
     </Compile>
+    <Compile Include="Current_Pet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Current_Pet.Designer.cs">
+      <DependentUpon>Current_Pet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dog_results.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dog_results.Designer.cs">
+      <DependentUpon>Dog_results.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cat_results.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cat_results.Designer.cs">
+      <DependentUpon>Cat_results.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dog_buddy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dog_buddy.Designer.cs">
+      <DependentUpon>Dog_buddy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cat_buddy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cat_buddy.Designer.cs">
+      <DependentUpon>Cat_buddy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lizard_buddy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lizard_buddy.Designer.cs">
+      <DependentUpon>Lizard_buddy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lizard_results.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lizard_results.Designer.cs">
+      <DependentUpon>Lizard_results.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Intermediary_page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Intermediary_page.Designer.cs">
+      <DependentUpon>Intermediary_page.cs</DependentUpon>
+    </Compile>
     <Compile Include="Seller_info.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -147,6 +195,30 @@
     <EmbeddedResource Include="Buyer_Info.resx">
       <DependentUpon>Buyer_Info.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Current_Pet.resx">
+      <DependentUpon>Current_Pet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dog_results.resx">
+      <DependentUpon>Dog_results.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cat_results.resx">
+      <DependentUpon>Cat_results.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dog_buddy.resx">
+      <DependentUpon>Dog_buddy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cat_buddy.resx">
+      <DependentUpon>Cat_buddy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lizard_buddy.resx">
+      <DependentUpon>Lizard_buddy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lizard_results.resx">
+      <DependentUpon>Lizard_results.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Intermediary_page.resx">
+      <DependentUpon>Intermediary_page.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Seller_info.resx">
       <DependentUpon>Seller_info.cs</DependentUpon>
     </EmbeddedResource>
@@ -187,15 +259,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Database1.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Database1_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>Database1.mdf</DependentUpon>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
@@ -206,6 +269,15 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Database1.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Database1_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

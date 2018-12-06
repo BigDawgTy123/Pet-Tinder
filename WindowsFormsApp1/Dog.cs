@@ -66,6 +66,8 @@ namespace WindowsFormsApp1
                 connection.Close();
                 
             }
+            Intermediate_page Check = new Intermediate_page(mail);
+            Check.Show();
             Close();
         }
     }

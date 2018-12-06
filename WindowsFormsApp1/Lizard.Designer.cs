@@ -286,11 +286,13 @@
             // 
             // lizard_submit
             // 
-            this.lizard_submit.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.lizard_submit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(85)))), ((int)(((byte)(92)))));
+            this.lizard_submit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.lizard_submit.Font = new System.Drawing.Font("Microsoft Sans Serif", 19F);
+            this.lizard_submit.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lizard_submit.Location = new System.Drawing.Point(147, 552);
             this.lizard_submit.Name = "lizard_submit";
-            this.lizard_submit.Size = new System.Drawing.Size(130, 42);
+            this.lizard_submit.Size = new System.Drawing.Size(126, 49);
             this.lizard_submit.TabIndex = 18;
             this.lizard_submit.Text = "SUBMIT";
             this.lizard_submit.UseVisualStyleBackColor = false;
@@ -298,12 +300,15 @@
             // 
             // lizard_back_button
             // 
-            this.lizard_back_button.Location = new System.Drawing.Point(2, 591);
+            this.lizard_back_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(85)))), ((int)(((byte)(92)))));
+            this.lizard_back_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.lizard_back_button.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lizard_back_button.Location = new System.Drawing.Point(2, 590);
             this.lizard_back_button.Name = "lizard_back_button";
             this.lizard_back_button.Size = new System.Drawing.Size(75, 23);
             this.lizard_back_button.TabIndex = 19;
             this.lizard_back_button.Text = "<<< Back";
-            this.lizard_back_button.UseVisualStyleBackColor = true;
+            this.lizard_back_button.UseVisualStyleBackColor = false;
             this.lizard_back_button.Click += new System.EventHandler(this.lizard_back_button_Click);
             // 
             // textBox1

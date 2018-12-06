@@ -126,13 +126,16 @@
             // 
             // submit_cat_form
             // 
+            this.submit_cat_form.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(85)))), ((int)(((byte)(92)))));
+            this.submit_cat_form.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.submit_cat_form.Font = new System.Drawing.Font("Microsoft Sans Serif", 19F);
+            this.submit_cat_form.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.submit_cat_form.Location = new System.Drawing.Point(151, 549);
             this.submit_cat_form.Name = "submit_cat_form";
             this.submit_cat_form.Size = new System.Drawing.Size(122, 43);
             this.submit_cat_form.TabIndex = 14;
             this.submit_cat_form.Text = "SUBMIT";
-            this.submit_cat_form.UseVisualStyleBackColor = true;
+            this.submit_cat_form.UseVisualStyleBackColor = false;
             this.submit_cat_form.Click += new System.EventHandler(this.button1_Click);
             // 
             // gender_combo
@@ -280,12 +283,15 @@
             // 
             // cat_back_button
             // 
+            this.cat_back_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(85)))), ((int)(((byte)(92)))));
+            this.cat_back_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.cat_back_button.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.cat_back_button.Location = new System.Drawing.Point(2, 590);
             this.cat_back_button.Name = "cat_back_button";
             this.cat_back_button.Size = new System.Drawing.Size(75, 23);
             this.cat_back_button.TabIndex = 23;
             this.cat_back_button.Text = "<<< Back";
-            this.cat_back_button.UseVisualStyleBackColor = true;
+            this.cat_back_button.UseVisualStyleBackColor = false;
             this.cat_back_button.Click += new System.EventHandler(this.cat_back_button_Click);
             // 
             // name_input

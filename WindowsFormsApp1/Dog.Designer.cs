@@ -286,8 +286,10 @@
             // 
             // dog_submit
             // 
-            this.dog_submit.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.dog_submit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(85)))), ((int)(((byte)(92)))));
+            this.dog_submit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.dog_submit.Font = new System.Drawing.Font("Microsoft Sans Serif", 19F);
+            this.dog_submit.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.dog_submit.Location = new System.Drawing.Point(134, 543);
             this.dog_submit.Name = "dog_submit";
             this.dog_submit.Size = new System.Drawing.Size(126, 49);
@@ -298,12 +300,15 @@
             // 
             // dog_back_button
             // 
+            this.dog_back_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(85)))), ((int)(((byte)(92)))));
+            this.dog_back_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.dog_back_button.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.dog_back_button.Location = new System.Drawing.Point(2, 590);
             this.dog_back_button.Name = "dog_back_button";
             this.dog_back_button.Size = new System.Drawing.Size(75, 23);
             this.dog_back_button.TabIndex = 20;
             this.dog_back_button.Text = "<<< Back";
-            this.dog_back_button.UseVisualStyleBackColor = true;
+            this.dog_back_button.UseVisualStyleBackColor = false;
             this.dog_back_button.Click += new System.EventHandler(this.dog_back_button_Click);
             // 
             // name_label
@@ -330,6 +335,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(85)))), ((int)(((byte)(92)))));
             this.ClientSize = new System.Drawing.Size(475, 615);
             this.Controls.Add(this.dog_back_button);
             this.Controls.Add(this.dog_submit);
@@ -351,6 +357,7 @@
             this.Controls.Add(this.name_label);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
+            this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.Name = "Dog";
             this.Text = "Dog Info Page";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

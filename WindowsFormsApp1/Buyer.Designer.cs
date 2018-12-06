@@ -41,7 +41,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, -1);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(478, 620);
             this.pictureBox1.TabIndex = 0;
@@ -50,7 +50,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(85)))), ((int)(((byte)(92)))));
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Location = new System.Drawing.Point(33, 135);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(403, 39);
@@ -59,45 +62,57 @@
             // 
             // buyer_back_button
             // 
+            this.buyer_back_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(85)))), ((int)(((byte)(92)))));
+            this.buyer_back_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buyer_back_button.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.buyer_back_button.Location = new System.Drawing.Point(2, 589);
             this.buyer_back_button.Name = "buyer_back_button";
             this.buyer_back_button.Size = new System.Drawing.Size(75, 23);
             this.buyer_back_button.TabIndex = 3;
             this.buyer_back_button.Text = "<<< Back";
-            this.buyer_back_button.UseVisualStyleBackColor = true;
+            this.buyer_back_button.UseVisualStyleBackColor = false;
             this.buyer_back_button.Click += new System.EventHandler(this.buyer_back_button_Click);
             // 
             // to_buying_dog_page
             // 
-            this.to_buying_dog_page.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.to_buying_dog_page.Location = new System.Drawing.Point(180, 227);
+            this.to_buying_dog_page.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(85)))), ((int)(((byte)(92)))));
+            this.to_buying_dog_page.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.to_buying_dog_page.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.to_buying_dog_page.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.to_buying_dog_page.Location = new System.Drawing.Point(154, 226);
             this.to_buying_dog_page.Name = "to_buying_dog_page";
-            this.to_buying_dog_page.Size = new System.Drawing.Size(119, 42);
+            this.to_buying_dog_page.Size = new System.Drawing.Size(201, 47);
             this.to_buying_dog_page.TabIndex = 4;
             this.to_buying_dog_page.Text = "Dog";
-            this.to_buying_dog_page.UseVisualStyleBackColor = true;
+            this.to_buying_dog_page.UseVisualStyleBackColor = false;
             this.to_buying_dog_page.Click += new System.EventHandler(this.button1_Click);
             // 
             // to_buying_cat_page
             // 
-            this.to_buying_cat_page.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.to_buying_cat_page.Location = new System.Drawing.Point(180, 312);
+            this.to_buying_cat_page.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(85)))), ((int)(((byte)(92)))));
+            this.to_buying_cat_page.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.to_buying_cat_page.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.to_buying_cat_page.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.to_buying_cat_page.Location = new System.Drawing.Point(155, 311);
             this.to_buying_cat_page.Name = "to_buying_cat_page";
-            this.to_buying_cat_page.Size = new System.Drawing.Size(119, 42);
+            this.to_buying_cat_page.Size = new System.Drawing.Size(201, 47);
             this.to_buying_cat_page.TabIndex = 5;
             this.to_buying_cat_page.Text = "Cat";
-            this.to_buying_cat_page.UseVisualStyleBackColor = true;
+            this.to_buying_cat_page.UseVisualStyleBackColor = false;
             this.to_buying_cat_page.Click += new System.EventHandler(this.to_buying_cat_page_Click);
             // 
             // to_buying_lizard_page
             // 
-            this.to_buying_lizard_page.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.to_buying_lizard_page.Location = new System.Drawing.Point(180, 399);
+            this.to_buying_lizard_page.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(85)))), ((int)(((byte)(92)))));
+            this.to_buying_lizard_page.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.to_buying_lizard_page.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.to_buying_lizard_page.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.to_buying_lizard_page.Location = new System.Drawing.Point(154, 398);
             this.to_buying_lizard_page.Name = "to_buying_lizard_page";
-            this.to_buying_lizard_page.Size = new System.Drawing.Size(119, 42);
+            this.to_buying_lizard_page.Size = new System.Drawing.Size(201, 47);
             this.to_buying_lizard_page.TabIndex = 6;
             this.to_buying_lizard_page.Text = "Lizard";
-            this.to_buying_lizard_page.UseVisualStyleBackColor = true;
+            this.to_buying_lizard_page.UseVisualStyleBackColor = false;
             this.to_buying_lizard_page.Click += new System.EventHandler(this.to_buying_lizard_page_Click);
             // 
             // Buyer

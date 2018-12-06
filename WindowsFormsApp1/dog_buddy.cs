@@ -10,28 +10,26 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class Buying_Lizard : Form
+    public partial class Dog_buddy : Form
     {
-        public Buying_Lizard()
+        public Dog_buddy()
         {
             InitializeComponent();
         }
 
-        private void lizard_titlebar_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void dog_email_textbox_TextChanged(object sender, EventArgs e)
         {
-            Buyer Check = new Buyer();
-            Check.Show();
-            Close();
+
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void home_button_Click(object sender, EventArgs e)
         {
-            Lizard_results Check = new Lizard_results();
+            Welcome_Screen Check = new Welcome_Screen();
             Check.Show();
             Close();
         }

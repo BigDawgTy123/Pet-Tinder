@@ -33,5 +33,22 @@ namespace WindowsFormsApp1
             Check.Show();
             Close();
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Cat_results Check = new Cat_results();
+            Check.Show();
+            Close();
+        }
     }
 }

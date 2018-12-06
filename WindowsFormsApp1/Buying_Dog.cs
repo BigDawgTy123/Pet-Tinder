@@ -40,5 +40,12 @@ namespace WindowsFormsApp1
            // this.doggosTableAdapter.Fill(this.database1DataSet.doggos);
 
         }
+
+        private void dog_submit_button_Click(object sender, EventArgs e)
+        {
+            Dog_results Check = new Dog_results();
+            Check.Show();
+            Close();
+        }
     }
 }

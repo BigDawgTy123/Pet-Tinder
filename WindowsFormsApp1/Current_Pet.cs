@@ -10,28 +10,18 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class Buying_Lizard : Form
+    public partial class Current_Pet : Form
     {
-        public Buying_Lizard()
+        string email;
+        public Current_Pet(string owner_email)
         {
             InitializeComponent();
-        }
-
-        private void lizard_titlebar_Click(object sender, EventArgs e)
-        {
-
+            email = owner_email;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Buyer Check = new Buyer();
-            Check.Show();
-            Close();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Lizard_results Check = new Lizard_results();
+            Intermediate_page Check = new Intermediate_page(email);
             Check.Show();
             Close();
         }

@@ -48,13 +48,14 @@
             // 
             // buyerButton
             // 
-            this.buyerButton.BackColor = System.Drawing.Color.Transparent;
+            this.buyerButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(85)))), ((int)(((byte)(92)))));
+            this.buyerButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buyerButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buyerButton.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.buyerButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.buyerButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.buyerButton.Location = new System.Drawing.Point(176, 233);
             this.buyerButton.Name = "buyerButton";
-            this.buyerButton.Size = new System.Drawing.Size(141, 42);
+            this.buyerButton.Size = new System.Drawing.Size(168, 41);
             this.buyerButton.TabIndex = 1;
             this.buyerButton.Text = "Buying";
             this.buyerButton.UseVisualStyleBackColor = false;
@@ -62,12 +63,13 @@
             // 
             // sellerButton
             // 
-            this.sellerButton.BackColor = System.Drawing.Color.Transparent;
+            this.sellerButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(85)))), ((int)(((byte)(92)))));
+            this.sellerButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.sellerButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 19F);
-            this.sellerButton.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.sellerButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.sellerButton.Location = new System.Drawing.Point(176, 303);
             this.sellerButton.Name = "sellerButton";
-            this.sellerButton.Size = new System.Drawing.Size(141, 41);
+            this.sellerButton.Size = new System.Drawing.Size(168, 41);
             this.sellerButton.TabIndex = 2;
             this.sellerButton.Text = "Selling";
             this.sellerButton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -76,12 +78,16 @@
             // 
             // close_button
             // 
-            this.close_button.Location = new System.Drawing.Point(205, 540);
+            this.close_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(85)))), ((int)(((byte)(92)))));
+            this.close_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.close_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.close_button.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.close_button.Location = new System.Drawing.Point(180, 525);
             this.close_button.Name = "close_button";
-            this.close_button.Size = new System.Drawing.Size(75, 23);
+            this.close_button.Size = new System.Drawing.Size(126, 49);
             this.close_button.TabIndex = 3;
             this.close_button.Text = "CLOSE";
-            this.close_button.UseVisualStyleBackColor = true;
+            this.close_button.UseVisualStyleBackColor = false;
             this.close_button.Click += new System.EventHandler(this.close_button_Click);
             // 
             // Welcome_Screen

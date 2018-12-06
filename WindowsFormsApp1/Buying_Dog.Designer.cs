@@ -72,7 +72,9 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(85)))), ((int)(((byte)(92)))));
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label2.Location = new System.Drawing.Point(144, 133);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(176, 31);
@@ -82,6 +84,8 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(85)))), ((int)(((byte)(92)))));
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label3.Location = new System.Drawing.Point(114, 164);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(233, 13);
@@ -90,18 +94,23 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(85)))), ((int)(((byte)(92)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button1.Location = new System.Drawing.Point(2, 590);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 4;
             this.button1.Text = "<<< Back";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(85)))), ((int)(((byte)(92)))));
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label4.Location = new System.Drawing.Point(85, 209);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(70, 25);
@@ -111,7 +120,9 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(85)))), ((int)(((byte)(92)))));
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label5.Location = new System.Drawing.Point(85, 259);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(54, 25);
@@ -121,7 +132,9 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(85)))), ((int)(((byte)(92)))));
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label6.Location = new System.Drawing.Point(85, 310);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(83, 25);
@@ -131,7 +144,9 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(85)))), ((int)(((byte)(92)))));
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.label7.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label7.Location = new System.Drawing.Point(85, 364);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(80, 25);
@@ -141,7 +156,9 @@
             // label8
             // 
             this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(85)))), ((int)(((byte)(92)))));
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.label8.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label8.Location = new System.Drawing.Point(85, 417);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(114, 25);
@@ -249,13 +266,17 @@
             // 
             // dog_submit_button
             // 
+            this.dog_submit_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(85)))), ((int)(((byte)(92)))));
+            this.dog_submit_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.dog_submit_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 19F);
+            this.dog_submit_button.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.dog_submit_button.Location = new System.Drawing.Point(141, 536);
             this.dog_submit_button.Name = "dog_submit_button";
             this.dog_submit_button.Size = new System.Drawing.Size(126, 49);
             this.dog_submit_button.TabIndex = 15;
             this.dog_submit_button.Text = "SUBMIT";
-            this.dog_submit_button.UseVisualStyleBackColor = true;
+            this.dog_submit_button.UseVisualStyleBackColor = false;
+            this.dog_submit_button.Click += new System.EventHandler(this.dog_submit_button_Click);
             // 
             // Buying_Dog
             // 
@@ -279,7 +300,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Buying_Dog";
-            this.Text = "Form1";
+            this.Text = "Buying_Dog";
             this.Load += new System.EventHandler(this.Buying_Dog_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

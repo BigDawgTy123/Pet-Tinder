@@ -50,10 +50,10 @@ namespace WindowsFormsApp1
             DataTable emails = new DataTable();
             string provider = ConfigurationManager.AppSettings["provider"];
             string connectionString = ConfigurationManager.AppSettings["connectionString"];
-
+            bool login = false;
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-               
+
                 connection.Open();
                 SqlCommand cmd = new SqlCommand("INSERT INTO Seller (Email, Name, City, State, Provisions, Phone) VALUES (@Email, @Name, @City, @State, @Provisions, @Phone)", connection);
                 cmd.Parameters.AddWithValue("@Email", owner_email_info.Text);
@@ -64,25 +64,29 @@ namespace WindowsFormsApp1
                 cmd.Parameters.AddWithValue("@Phone", owner_phone_info.Text);
                 try
                 {
-                      cmd.ExecuteNonQuery();
+                    cmd.ExecuteNonQuery();
                 }
                 catch (SqlException sqlEX)
                 {
-                      
-                      if (sqlEX.Message.StartsWith("Violation of PRIMARY KEY constraint"))
-                      {
-                        MessageBox.Show("Please click login button");
-                      }
-                      else
+
+                    if (sqlEX.Message.StartsWith("Violation of PRIMARY KEY constraint"))
+                    {
+                        MessageBox.Show("Please click login button ");
+                        login = true;
+                    }
+                    else
                         MessageBox.Show(sqlEX.Message);
                 }
                 connection.Close();
-                Seller Check = new Seller(owner_email_info.Text);
-                Check.Show();
-                Hide();
+                if (!login)
+                {
+                    Seller Check = new Seller(owner_email_info.Text);
+                    Check.Show();
+                    Hide();
+                    Close();
+                }
+
             }
-            Close();
-            
         }
 
         private void button2_Click_1(object sender, EventArgs e)
@@ -92,7 +96,9 @@ namespace WindowsFormsApp1
 
         private void Loigin_click(object sender, EventArgs e)
         {
-
+           Intermediate_page Check = new Intermediate_page(owner_email_info.Text);
+            Check.Show();
+            Close();
         }
     }
 }

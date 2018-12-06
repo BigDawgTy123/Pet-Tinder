@@ -61,7 +61,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(85)))), ((int)(((byte)(92)))));
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19F);
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Location = new System.Drawing.Point(137, 176);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(223, 30);
@@ -216,23 +218,29 @@
             // 
             // owner_info_submit
             // 
+            this.owner_info_submit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(85)))), ((int)(((byte)(92)))));
+            this.owner_info_submit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.owner_info_submit.Font = new System.Drawing.Font("Microsoft Sans Serif", 19F);
+            this.owner_info_submit.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.owner_info_submit.Location = new System.Drawing.Point(166, 534);
             this.owner_info_submit.Name = "owner_info_submit";
             this.owner_info_submit.Size = new System.Drawing.Size(126, 49);
             this.owner_info_submit.TabIndex = 13;
             this.owner_info_submit.Text = "SUBMIT";
-            this.owner_info_submit.UseVisualStyleBackColor = true;
+            this.owner_info_submit.UseVisualStyleBackColor = false;
             this.owner_info_submit.Click += new System.EventHandler(this.Submit_click);
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(85)))), ((int)(((byte)(92)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button2.Location = new System.Drawing.Point(2, 590);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 14;
             this.button2.Text = "<<< Back";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // label7
@@ -269,12 +277,15 @@
             // 
             // Login
             // 
-            this.Login.Location = new System.Drawing.Point(403, 324);
+            this.Login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(85)))), ((int)(((byte)(92)))));
+            this.Login.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Login.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Login.Location = new System.Drawing.Point(403, 326);
             this.Login.Name = "Login";
-            this.Login.Size = new System.Drawing.Size(75, 27);
+            this.Login.Size = new System.Drawing.Size(58, 27);
             this.Login.TabIndex = 18;
             this.Login.Text = "Login";
-            this.Login.UseVisualStyleBackColor = true;
+            this.Login.UseVisualStyleBackColor = false;
             this.Login.Click += new System.EventHandler(this.Loigin_click);
             // 
             // Seller_info
