@@ -45,6 +45,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.owner_provisions_info = new System.Windows.Forms.ComboBox();
             this.owner_city_info = new System.Windows.Forms.TextBox();
+            this.Login = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -222,6 +223,7 @@
             this.owner_info_submit.TabIndex = 13;
             this.owner_info_submit.Text = "SUBMIT";
             this.owner_info_submit.UseVisualStyleBackColor = true;
+            this.owner_info_submit.Click += new System.EventHandler(this.Submit_click);
             // 
             // button2
             // 
@@ -265,11 +267,22 @@
             this.owner_city_info.Size = new System.Drawing.Size(267, 30);
             this.owner_city_info.TabIndex = 17;
             // 
+            // Login
+            // 
+            this.Login.Location = new System.Drawing.Point(403, 324);
+            this.Login.Name = "Login";
+            this.Login.Size = new System.Drawing.Size(75, 27);
+            this.Login.TabIndex = 18;
+            this.Login.Text = "Login";
+            this.Login.UseVisualStyleBackColor = true;
+            this.Login.Click += new System.EventHandler(this.Loigin_click);
+            // 
             // Seller_info
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(475, 615);
+            this.ClientSize = new System.Drawing.Size(473, 615);
+            this.Controls.Add(this.Login);
             this.Controls.Add(this.owner_city_info);
             this.Controls.Add(this.owner_provisions_info);
             this.Controls.Add(this.label7);
@@ -312,5 +325,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox owner_provisions_info;
         private System.Windows.Forms.TextBox owner_city_info;
+        private System.Windows.Forms.Button Login;
     }
 }

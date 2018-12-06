@@ -12,14 +12,16 @@ namespace WindowsFormsApp1
 {
     public partial class Seller : Form
     {
-        public Seller()
+        String email = null;
+        public Seller(string Email)
         {
             InitializeComponent();
+            email = Email;
         }
 
         private void dog_button_Click(object sender, EventArgs e)
         {
-            Dog Check = new Dog();
+            Dog Check = new Dog(email);
             Check.Show();
             Hide();
         }

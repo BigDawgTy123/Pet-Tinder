@@ -207,7 +207,7 @@
             this.button1.TabIndex = 11;
             this.button1.Text = "<<< Back";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.Back_Click);
             // 
             // buyer_info_submit
             // 
@@ -218,6 +218,7 @@
             this.buyer_info_submit.TabIndex = 12;
             this.buyer_info_submit.Text = "SUBMIT";
             this.buyer_info_submit.UseVisualStyleBackColor = true;
+            this.buyer_info_submit.Click += new System.EventHandler(this.Submit_Click);
             // 
             // label6
             // 

@@ -23,7 +23,7 @@ namespace WindowsFormsApp1
 
         private void sellerButton_Click(object sender, EventArgs e)
         {
-            Seller Check = new Seller();
+            Seller_info Check = new Seller_info();
             Check.Show();
             Hide();
         }
@@ -31,6 +31,13 @@ namespace WindowsFormsApp1
         private void buyerButton_Click(object sender, EventArgs e)
         {
             Buyer Check = new Buyer();
+            Check.Show();
+            Hide();
+        }
+
+        private void buyer2Button_Click(object sender, EventArgs e)
+        {
+            Buyer_Info Check = new Buyer_Info();
             Check.Show();
             Hide();
         }

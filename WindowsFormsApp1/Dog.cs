@@ -7,14 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using System.Data.Common;
+using System.Configuration;
 
 namespace WindowsFormsApp1
 {
     public partial class Dog : Form
     {
-        public Dog()
+        string mail = null;
+        public Dog(string Email)
         {
             InitializeComponent();
+            mail = Email;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -29,16 +34,39 @@ namespace WindowsFormsApp1
 
         private void dog_back_button_Click(object sender, EventArgs e)
         {
-            Seller Check = new Seller();
-            Check.Show();
             Close();
         }
 
         private void dog_submit_Click(object sender, EventArgs e)
         {
-            Seller_info Check = new Seller_info();
-            Check.Show();
-            //Close();
+            string provider = ConfigurationManager.AppSettings["provider"];
+            string connectionString = ConfigurationManager.AppSettings["connectionString"];
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+                SqlCommand cmd = new SqlCommand("INSERT INTO Doggos (Email, Name, Breed, Weight, Gender, Personality, Playfulness, Shedding, Age) VALUES " +
+                    "(@Email, @Name, @Breed, @Weight, @Gender, @Personality, @Playfulness, @Shedding, @Age)", connection);
+                cmd.Parameters.AddWithValue("@Email", mail);
+                cmd.Parameters.AddWithValue("@Name", name_text.Text);
+                cmd.Parameters.AddWithValue("@Breed", breed_combo.SelectedItem.ToString());
+                cmd.Parameters.AddWithValue("@Weight", weight_combo.SelectedItem.ToString());
+                cmd.Parameters.AddWithValue("@Gender", gender_combo.SelectedItem.ToString());
+                cmd.Parameters.AddWithValue("@Personality", personality_combo.SelectedItem.ToString());
+                cmd.Parameters.AddWithValue("@Playfulness", playfulness_combo.SelectedItem.ToString());
+                cmd.Parameters.AddWithValue("@Shedding", shedding_combo.SelectedItem.ToString());
+                cmd.Parameters.AddWithValue("@Age", age_combo.SelectedItem.ToString());
+                try
+                {
+                    cmd.ExecuteNonQuery();
+                }
+                catch (SqlException sqlEX)
+                {
+                    MessageBox.Show(sqlEX.Message);
+                }
+                connection.Close();
+                
+            }
+            Close();
         }
     }
 }

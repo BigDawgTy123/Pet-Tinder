@@ -33,5 +33,12 @@ namespace WindowsFormsApp1
             Check.Show();
             Close();
         }
+
+        private void Buying_Dog_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'database1DataSet.doggos' table. You can move, or remove it, as needed.
+           // this.doggosTableAdapter.Fill(this.database1DataSet.doggos);
+
+        }
     }
 }

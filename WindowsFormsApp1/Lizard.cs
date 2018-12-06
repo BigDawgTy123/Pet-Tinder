@@ -34,8 +34,8 @@ namespace WindowsFormsApp1
 
         private void lizard_back_button_Click(object sender, EventArgs e)
         {
-            Seller Check = new Seller();
-            Check.Show();
+            //Seller Check = new Seller();
+           // Check.Show();
             Close();
         }
 
