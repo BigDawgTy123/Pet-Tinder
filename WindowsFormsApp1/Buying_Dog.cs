@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using System.Data.Common;
+using System.Configuration;
 
 namespace WindowsFormsApp1
 {
@@ -33,7 +36,34 @@ namespace WindowsFormsApp1
             Check.Show();
             Close();
         }
-
+        private void Submit_click(object sender, EventArgs e)
+        {
+            DataTable dogs = new DataTable();
+            string provider = ConfigurationManager.AppSettings["provider"];
+            string connectionString = ConfigurationManager.AppSettings["connectionString"];
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                using (SqlDataAdapter adapter = new SqlDataAdapter("SELECT * FROM Doggos", connection)) //, Age = IFNULL(" + comboBox2 + ", @Age), Gender = IFNULL(" + comboBox3 + ", @Gender), Weight = IFNULL(" + comboBox4 + ", @Weight), Personality = IFNULL(" + comboBox5 + ", @Personality)", connection))
+                {
+                    try
+                    {
+                        //MessageBox.Show(adapter.ToString());
+                        adapter.Fill(dogs);
+                    }
+                    catch (SqlException sqlerror)
+                    {
+                        MessageBox.Show(sqlerror.ToString());
+                    }
+                }
+            }
+            foreach (DataRow row in dogs.Rows)
+            {
+                string email = row["Email"].ToString();
+                string breed = row["Breed"].ToString();
+                string name = row["Name"].ToString();
+                MessageBox.Show("Email:"+email+" Breed:"+breed+"Dog Name"+name+" ");
+            }
+        }
         private void Buying_Dog_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'database1DataSet.doggos' table. You can move, or remove it, as needed.

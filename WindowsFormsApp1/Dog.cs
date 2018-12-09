@@ -66,9 +66,11 @@ namespace WindowsFormsApp1
                 connection.Close();
                 
             }
-            Intermediate_page Check = new Intermediate_page(mail);
-            Check.Show();
+            Welcome_Screen check = new Welcome_Screen();
+            check.Show();
             Close();
+            //Intermediate_page Check = new Intermediate_page(mail);
+            //Check.Show();
         }
     }
 }

@@ -91,6 +91,8 @@ namespace WindowsFormsApp1
 
         private void button2_Click_1(object sender, EventArgs e)
         {
+            Welcome_Screen check = new Welcome_Screen();
+            check.Show();
             Close();
         }
 
