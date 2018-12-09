@@ -10,11 +10,14 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
+    
     public partial class Lizard : Form
     {
-        public Lizard()
+        string mail = null;
+        public Lizard(String Email)
         {
             InitializeComponent();
+            mail = Email;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -34,8 +37,8 @@ namespace WindowsFormsApp1
 
         private void lizard_back_button_Click(object sender, EventArgs e)
         {
-            //Seller Check = new Seller();
-           // Check.Show();
+            Seller Check = new Seller(mail);
+            Check.Show();
             Close();
         }
 

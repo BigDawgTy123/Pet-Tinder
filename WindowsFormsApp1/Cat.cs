@@ -12,9 +12,11 @@ namespace WindowsFormsApp1
 {
     public partial class Cat : Form
     {
-        public Cat()
+        string mail = null;
+        public Cat(String Email)
         {
             InitializeComponent();
+            mail = Email;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -91,8 +93,8 @@ namespace WindowsFormsApp1
 
         private void cat_back_button_Click(object sender, EventArgs e)
         {
-            //Seller Check = new Seller();
-            //Check.Show();
+            Seller Check = new Seller(mail);
+            Check.Show();
             Close();
         }
     }

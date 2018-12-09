@@ -75,7 +75,7 @@
             this.home_button.Name = "home_button";
             this.home_button.Size = new System.Drawing.Size(75, 23);
             this.home_button.TabIndex = 3;
-            this.home_button.Text = "<<< Home";
+            this.home_button.Text = "<<< Back";
             this.home_button.UseVisualStyleBackColor = false;
             this.home_button.Click += new System.EventHandler(this.home_button_Click);
             // 

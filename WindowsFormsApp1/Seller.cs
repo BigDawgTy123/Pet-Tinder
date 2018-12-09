@@ -28,14 +28,14 @@ namespace WindowsFormsApp1
 
         private void cat_button_Click(object sender, EventArgs e)
         {
-            Cat Check = new Cat();
+            Cat Check = new Cat(email);
             Check.Show();
             Hide();
         }
 
         private void lizard_button_Click(object sender, EventArgs e)
         {
-            Lizard Check = new Lizard();
+            Lizard Check = new Lizard(email);
             Check.Show();
             Hide();
         }

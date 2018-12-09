@@ -98,9 +98,8 @@ namespace WindowsFormsApp1
 
         private void Loigin_click(object sender, EventArgs e)
         {
-           Intermediate_page Check = new Intermediate_page(owner_email_info.Text);
+            Intermediate_page Check = new Intermediate_page(owner_email_info.Text);
             Check.Show();
-            Close();
         }
     }
 }

@@ -12,9 +12,10 @@ namespace WindowsFormsApp1
 {
     public partial class Dog_buddy : Form
     {
-        public Dog_buddy()
+        public Dog_buddy(string email)
         {
             InitializeComponent();
+            dog_email_textbox.Text = email;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -29,8 +30,6 @@ namespace WindowsFormsApp1
 
         private void home_button_Click(object sender, EventArgs e)
         {
-            Welcome_Screen Check = new Welcome_Screen();
-            Check.Show();
             Close();
         }
     }

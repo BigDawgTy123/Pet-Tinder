@@ -34,6 +34,8 @@ namespace WindowsFormsApp1
 
         private void dog_back_button_Click(object sender, EventArgs e)
         {
+            Seller Check = new Seller(mail);
+            Check.Show();
             Close();
         }
 

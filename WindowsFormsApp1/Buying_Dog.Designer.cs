@@ -275,7 +275,11 @@
             this.dog_submit_button.Size = new System.Drawing.Size(126, 49);
             this.dog_submit_button.TabIndex = 15;
             this.dog_submit_button.Text = "SUBMIT";
+
             this.dog_submit_button.UseVisualStyleBackColor = false;
+
+            this.dog_submit_button.UseVisualStyleBackColor = true;
+
             this.dog_submit_button.Click += new System.EventHandler(this.Submit_click);
             // 
             // Buying_Dog

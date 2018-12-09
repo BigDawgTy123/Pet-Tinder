@@ -32,50 +32,96 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
+
             Buyer Check = new Buyer();
             Check.Show();
             Close();
         }
+
         private void Submit_click(object sender, EventArgs e)
         {
             DataTable dogs = new DataTable();
+            String Breed = null;
+            String Age = null;
+            String Gender = null;
+            String Personality = null;
+            if (comboBox1.SelectedItem==null)
+            {
+                Breed = "Breed IS NOT NULL";
+            }
+            else
+            {
+                Breed = "Breed = '" + comboBox1.SelectedItem.ToString() +"'";
+                MessageBox.Show(Breed);
+            }
+            if (comboBox2.SelectedItem == null)
+            {
+                Age = "Age IS NOT NULL";
+            }
+            else
+            {
+                Age = "Age = '" + comboBox2.SelectedItem.ToString() + "'";
+                MessageBox.Show(Age);
+            }
+            if (comboBox3.SelectedItem == null)
+            {
+                Gender = "Gender IS NOT NULL";
+            }
+            else
+            {
+                Gender = "Gender = '" + comboBox3.SelectedItem.ToString() + "'";
+                MessageBox.Show(Gender);
+            }
+            if (comboBox4.SelectedItem == null)
+            {
+                Personality = "Personality IS NOT NULL";
+            }
+            else
+            {
+                Personality = "Personality = '" + comboBox4.SelectedItem.ToString() + "'";
+                MessageBox.Show(Personality);
+            }
+
             string provider = ConfigurationManager.AppSettings["provider"];
             string connectionString = ConfigurationManager.AppSettings["connectionString"];
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                using (SqlDataAdapter adapter = new SqlDataAdapter("SELECT * FROM Doggos", connection)) //, Age = IFNULL(" + comboBox2 + ", @Age), Gender = IFNULL(" + comboBox3 + ", @Gender), Weight = IFNULL(" + comboBox4 + ", @Weight), Personality = IFNULL(" + comboBox5 + ", @Personality)", connection))
+
+
+
+                using (SqlDataAdapter adapter = new SqlDataAdapter("SELECT * FROM Doggos Where "+ Breed +" AND " +Age +" AND " +Gender+ " AND " +Personality, connection))
                 {
                     try
                     {
-                        //MessageBox.Show(adapter.ToString());
                         adapter.Fill(dogs);
                     }
                     catch (SqlException sqlerror)
                     {
                         MessageBox.Show(sqlerror.ToString());
                     }
+
+
                 }
-            }
-            foreach (DataRow row in dogs.Rows)
-            {
-                string email = row["Email"].ToString();
-                string breed = row["Breed"].ToString();
-                string name = row["Name"].ToString();
-                MessageBox.Show("Email:"+email+" Breed:"+breed+"Dog Name"+name+" ");
+                foreach (DataRow row in dogs.Rows)
+                {
+                    Dog_results Check = new Dog_results(row["Name"].ToString(), row["Breed"].ToString(), row["Age"].ToString(), row["Gender"].ToString(), 
+                                            row["Weight"].ToString(), row["Personality"].ToString(), row["Email"].ToString(), this);
+                    Check.ShowDialog();
+                }
+                Welcome_Screen Check2 = new Welcome_Screen();
+                Check2.Show();
             }
         }
+        
+
+
         private void Buying_Dog_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'database1DataSet.doggos' table. You can move, or remove it, as needed.
+           // TODO: This line of code loads data into the 'database1DataSet.doggos' table. You can move, or remove it, as needed.
            // this.doggosTableAdapter.Fill(this.database1DataSet.doggos);
 
         }
 
-        private void dog_submit_button_Click(object sender, EventArgs e)
-        {
-            Dog_results Check = new Dog_results();
-            Check.Show();
-            Close();
-        }
+
     }
 }
