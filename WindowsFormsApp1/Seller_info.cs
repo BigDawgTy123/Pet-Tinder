@@ -98,8 +98,45 @@ namespace WindowsFormsApp1
 
         private void Loigin_click(object sender, EventArgs e)
         {
-            Intermediate_page Check = new Intermediate_page(owner_email_info.Text);
-            Check.Show();
+            DataTable Emails = new DataTable();
+            bool login2 = false;
+            string provider = ConfigurationManager.AppSettings["provider"];
+            string connectionString = ConfigurationManager.AppSettings["connectionString"];
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                using (SqlDataAdapter adapter = new SqlDataAdapter("Select Email FROM Seller ", connection))
+                {
+                    try
+                    {
+                        adapter.Fill(Emails);
+                    }
+                    catch(SqlException sql)
+                    {
+                        MessageBox.Show(sql.ToString());
+                    }
+                }
+
+            }
+            foreach (DataRow row in Emails.Rows)
+            {
+                if(owner_email_info.Text == row["Email"].ToString())
+                {
+                    Intermediate_page Check = new Intermediate_page(owner_email_info.Text);
+                    Check.Show();
+                    Close();
+                    login2 = true;
+                    break;
+                }
+                else
+                {
+                    login2 = false;
+                }
+            }
+            if (!login2)
+            {
+                MessageBox.Show("Please sign in using valid Email.");
+            }
+              
         }
     }
 }
