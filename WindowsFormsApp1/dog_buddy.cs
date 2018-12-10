@@ -30,7 +30,14 @@ namespace WindowsFormsApp1
 
         private void home_button_Click(object sender, EventArgs e)
         {
+            Welcome_Screen Check = new Welcome_Screen();
+            Check.Show();
             Close();
+        }
+
+        private void Dog_buddy_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

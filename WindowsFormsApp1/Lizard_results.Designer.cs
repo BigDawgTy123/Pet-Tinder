@@ -40,7 +40,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.lizard_results_name_texbox = new System.Windows.Forms.TextBox();
-            this.textBox2lizard_results_breed_texbox = new System.Windows.Forms.TextBox();
+            this.lizard_results_breed_texbox = new System.Windows.Forms.TextBox();
             this.lizard_results_age_texbox = new System.Windows.Forms.TextBox();
             this.lizard_results_gender_texbox = new System.Windows.Forms.TextBox();
             this.lizard_results_personality_texbox = new System.Windows.Forms.TextBox();
@@ -84,6 +84,7 @@
             this.lizard_results_no_button.TabIndex = 2;
             this.lizard_results_no_button.Text = "NO";
             this.lizard_results_no_button.UseVisualStyleBackColor = false;
+            this.lizard_results_no_button.Click += new System.EventHandler(this.lizard_results_no_button_Click);
             // 
             // back_button
             // 
@@ -173,14 +174,14 @@
             this.lizard_results_name_texbox.TabIndex = 10;
             this.lizard_results_name_texbox.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
             // 
-            // textBox2lizard_results_breed_texbox
+            // lizard_results_breed_texbox
             // 
-            this.textBox2lizard_results_breed_texbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.textBox2lizard_results_breed_texbox.Location = new System.Drawing.Point(182, 270);
-            this.textBox2lizard_results_breed_texbox.Name = "textBox2lizard_results_breed_texbox";
-            this.textBox2lizard_results_breed_texbox.Size = new System.Drawing.Size(172, 30);
-            this.textBox2lizard_results_breed_texbox.TabIndex = 11;
-            this.textBox2lizard_results_breed_texbox.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.lizard_results_breed_texbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.lizard_results_breed_texbox.Location = new System.Drawing.Point(182, 270);
+            this.lizard_results_breed_texbox.Name = "lizard_results_breed_texbox";
+            this.lizard_results_breed_texbox.Size = new System.Drawing.Size(172, 30);
+            this.lizard_results_breed_texbox.TabIndex = 11;
+            this.lizard_results_breed_texbox.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // lizard_results_age_texbox
             // 
@@ -227,7 +228,7 @@
             this.Controls.Add(this.lizard_results_personality_texbox);
             this.Controls.Add(this.lizard_results_gender_texbox);
             this.Controls.Add(this.lizard_results_age_texbox);
-            this.Controls.Add(this.textBox2lizard_results_breed_texbox);
+            this.Controls.Add(this.lizard_results_breed_texbox);
             this.Controls.Add(this.lizard_results_name_texbox);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -260,7 +261,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox lizard_results_name_texbox;
-        private System.Windows.Forms.TextBox textBox2lizard_results_breed_texbox;
+        private System.Windows.Forms.TextBox lizard_results_breed_texbox;
         private System.Windows.Forms.TextBox lizard_results_age_texbox;
         private System.Windows.Forms.TextBox lizard_results_gender_texbox;
         private System.Windows.Forms.TextBox lizard_results_personality_texbox;

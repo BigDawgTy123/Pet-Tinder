@@ -12,15 +12,26 @@ namespace WindowsFormsApp1
 {
     public partial class Lizard_results : Form
     {
-        public Lizard_results()
+        String Email = "";
+        Form lizard = null;
+        public Lizard_results(string name, string breed, string age, string gender, string weight, string personality, string email, Form Lizard)
         {
             InitializeComponent();
+            lizard_results_name_texbox.Text = name;
+            lizard_results_breed_texbox.Text = breed;
+            lizard_results_age_texbox.Text = age;
+            lizard_results_gender_texbox.Text = gender;
+            lizard_results_weight_texbox.Text = weight;
+            lizard_results_personality_texbox.Text = personality;
+            Email = email;
+            lizard = Lizard;
+            lizard.Close();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Lizard_buddy Check = new Lizard_buddy();
-            Check.Show();
+            Lizard_buddy Check = new Lizard_buddy(Email);
+            Check.ShowDialog();
             Close();
         }
 
@@ -73,6 +84,11 @@ namespace WindowsFormsApp1
         {
             Buying_Lizard Check = new Buying_Lizard();
             Check.Show();
+            Close();
+        }
+
+        private void lizard_results_no_button_Click(object sender, EventArgs e)
+        {
             Close();
         }
     }

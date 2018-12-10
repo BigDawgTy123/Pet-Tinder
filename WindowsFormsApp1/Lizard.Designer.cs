@@ -38,16 +38,16 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
+            this.age_combo = new System.Windows.Forms.ComboBox();
+            this.breed_combo = new System.Windows.Forms.ComboBox();
+            this.weight_combo = new System.Windows.Forms.ComboBox();
+            this.gender_combo = new System.Windows.Forms.ComboBox();
+            this.personality_combo = new System.Windows.Forms.ComboBox();
+            this.preffered_temp_combo = new System.Windows.Forms.ComboBox();
+            this.food_type = new System.Windows.Forms.ComboBox();
             this.lizard_submit = new System.Windows.Forms.Button();
             this.lizard_back_button = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.name_text = new System.Windows.Forms.TextBox();
             this.l_name_label = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -159,11 +159,11 @@
             this.label9.TabIndex = 9;
             this.label9.Text = "Food Type:";
             // 
-            // comboBox1
+            // age_combo
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.age_combo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.age_combo.FormattingEnabled = true;
+            this.age_combo.Items.AddRange(new object[] {
             "     1",
             "     2",
             "     3",
@@ -181,16 +181,16 @@
             "36 - 40",
             "41 - 45",
             "46 - 50"});
-            this.comboBox1.Location = new System.Drawing.Point(158, 206);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(83, 33);
-            this.comboBox1.TabIndex = 11;
+            this.age_combo.Location = new System.Drawing.Point(158, 206);
+            this.age_combo.Name = "age_combo";
+            this.age_combo.Size = new System.Drawing.Size(83, 33);
+            this.age_combo.TabIndex = 11;
             // 
-            // comboBox2
+            // breed_combo
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.breed_combo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.breed_combo.FormattingEnabled = true;
+            this.breed_combo.Items.AddRange(new object[] {
             "Beaded Lizard",
             "Carolina Anole",
             "Chameleon",
@@ -204,16 +204,16 @@
             "Komodo Dragon",
             "Leopard Lizard",
             "Thorny Devil"});
-            this.comboBox2.Location = new System.Drawing.Point(174, 245);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(173, 33);
-            this.comboBox2.TabIndex = 12;
+            this.breed_combo.Location = new System.Drawing.Point(174, 245);
+            this.breed_combo.Name = "breed_combo";
+            this.breed_combo.Size = new System.Drawing.Size(173, 33);
+            this.breed_combo.TabIndex = 12;
             // 
-            // comboBox3
+            // weight_combo
             // 
-            this.comboBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.weight_combo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.weight_combo.FormattingEnabled = true;
+            this.weight_combo.Items.AddRange(new object[] {
             "1 - 5 LBS",
             "6 - 10 LBS",
             "11 - 20 LBS",
@@ -221,68 +221,68 @@
             "101 - 150 LBS",
             "151 - 200 LBS",
             "+200 LBS"});
-            this.comboBox3.Location = new System.Drawing.Point(184, 287);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(99, 33);
-            this.comboBox3.TabIndex = 13;
+            this.weight_combo.Location = new System.Drawing.Point(184, 287);
+            this.weight_combo.Name = "weight_combo";
+            this.weight_combo.Size = new System.Drawing.Size(99, 33);
+            this.weight_combo.TabIndex = 13;
             // 
-            // comboBox4
+            // gender_combo
             // 
-            this.comboBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
+            this.gender_combo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.gender_combo.FormattingEnabled = true;
+            this.gender_combo.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.comboBox4.Location = new System.Drawing.Point(187, 329);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(96, 33);
-            this.comboBox4.TabIndex = 14;
+            this.gender_combo.Location = new System.Drawing.Point(187, 329);
+            this.gender_combo.Name = "gender_combo";
+            this.gender_combo.Size = new System.Drawing.Size(96, 33);
+            this.gender_combo.TabIndex = 14;
             // 
-            // comboBox5
+            // personality_combo
             // 
-            this.comboBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Items.AddRange(new object[] {
+            this.personality_combo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.personality_combo.FormattingEnabled = true;
+            this.personality_combo.Items.AddRange(new object[] {
             "Shy/Timid",
             "Agressive",
             "Dosile",
             "Heat-Lovin",
             "Jealous",
             "Friendly"});
-            this.comboBox5.Location = new System.Drawing.Point(218, 370);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(163, 33);
-            this.comboBox5.TabIndex = 15;
+            this.personality_combo.Location = new System.Drawing.Point(218, 370);
+            this.personality_combo.Name = "personality_combo";
+            this.personality_combo.Size = new System.Drawing.Size(163, 33);
+            this.personality_combo.TabIndex = 15;
             // 
-            // comboBox6
+            // preffered_temp_combo
             // 
-            this.comboBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Items.AddRange(new object[] {
+            this.preffered_temp_combo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.preffered_temp_combo.FormattingEnabled = true;
+            this.preffered_temp_combo.Items.AddRange(new object[] {
             "65 - 70",
             "71 - 75",
             "76 - 80",
             "81 - 85",
             "85 - 90",
             "90 - 100"});
-            this.comboBox6.Location = new System.Drawing.Point(257, 413);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(101, 33);
-            this.comboBox6.TabIndex = 16;
+            this.preffered_temp_combo.Location = new System.Drawing.Point(257, 413);
+            this.preffered_temp_combo.Name = "preffered_temp_combo";
+            this.preffered_temp_combo.Size = new System.Drawing.Size(101, 33);
+            this.preffered_temp_combo.TabIndex = 16;
             // 
-            // comboBox7
+            // food_type
             // 
-            this.comboBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Items.AddRange(new object[] {
+            this.food_type.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.food_type.FormattingEnabled = true;
+            this.food_type.Items.AddRange(new object[] {
             "Herbivore",
             "Carnivore",
             "Omnivore"});
-            this.comboBox7.Location = new System.Drawing.Point(217, 457);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(141, 33);
-            this.comboBox7.TabIndex = 17;
-            this.comboBox7.SelectedIndexChanged += new System.EventHandler(this.comboBox7_SelectedIndexChanged);
+            this.food_type.Location = new System.Drawing.Point(217, 457);
+            this.food_type.Name = "food_type";
+            this.food_type.Size = new System.Drawing.Size(141, 33);
+            this.food_type.TabIndex = 17;
+            this.food_type.SelectedIndexChanged += new System.EventHandler(this.comboBox7_SelectedIndexChanged);
             // 
             // lizard_submit
             // 
@@ -311,13 +311,13 @@
             this.lizard_back_button.UseVisualStyleBackColor = false;
             this.lizard_back_button.Click += new System.EventHandler(this.lizard_back_button_Click);
             // 
-            // textBox1
+            // name_text
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.textBox1.Location = new System.Drawing.Point(174, 166);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(212, 30);
-            this.textBox1.TabIndex = 10;
+            this.name_text.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.name_text.Location = new System.Drawing.Point(174, 166);
+            this.name_text.Name = "name_text";
+            this.name_text.Size = new System.Drawing.Size(212, 30);
+            this.name_text.TabIndex = 10;
             // 
             // l_name_label
             // 
@@ -339,14 +339,14 @@
             this.ClientSize = new System.Drawing.Size(475, 615);
             this.Controls.Add(this.lizard_back_button);
             this.Controls.Add(this.lizard_submit);
-            this.Controls.Add(this.comboBox7);
-            this.Controls.Add(this.comboBox6);
-            this.Controls.Add(this.comboBox5);
-            this.Controls.Add(this.comboBox4);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.food_type);
+            this.Controls.Add(this.preffered_temp_combo);
+            this.Controls.Add(this.personality_combo);
+            this.Controls.Add(this.gender_combo);
+            this.Controls.Add(this.weight_combo);
+            this.Controls.Add(this.breed_combo);
+            this.Controls.Add(this.age_combo);
+            this.Controls.Add(this.name_text);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -376,16 +376,16 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.ComboBox comboBox6;
-        private System.Windows.Forms.ComboBox comboBox7;
+        private System.Windows.Forms.ComboBox age_combo;
+        private System.Windows.Forms.ComboBox breed_combo;
+        private System.Windows.Forms.ComboBox weight_combo;
+        private System.Windows.Forms.ComboBox gender_combo;
+        private System.Windows.Forms.ComboBox personality_combo;
+        private System.Windows.Forms.ComboBox preffered_temp_combo;
+        private System.Windows.Forms.ComboBox food_type;
         private System.Windows.Forms.Button lizard_submit;
         private System.Windows.Forms.Button lizard_back_button;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox name_text;
         private System.Windows.Forms.Label l_name_label;
     }
 }

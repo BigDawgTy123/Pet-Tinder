@@ -12,9 +12,11 @@ namespace WindowsFormsApp1
 {
     public partial class Cat_buddy : Form
     {
-        public Cat_buddy()
+
+        public Cat_buddy(string email)
         {
             InitializeComponent();
+            cat_email_textbox.Text = email;
         }
 
         private void cat_email_textbox_TextChanged(object sender, EventArgs e)

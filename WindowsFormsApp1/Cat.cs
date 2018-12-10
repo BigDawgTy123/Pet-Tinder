@@ -7,12 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using System.Data.Common;
+using System.Configuration;
 
 namespace WindowsFormsApp1
 {
     public partial class Cat : Form
     {
         string mail = null;
+
         public Cat(String Email)
         {
             InitializeComponent();
@@ -36,9 +40,35 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Seller_info Check = new Seller_info();
+            string provider = ConfigurationManager.AppSettings["provider"];
+            string connectionString = ConfigurationManager.AppSettings["connectionString"];
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+                SqlCommand cmd = new SqlCommand("INSERT INTO CAT (Email, Name, Breed, Weight, Gender, Personality, Laziness, Age) VALUES " +
+                    "(@Email, @Name, @Breed, @Weight, @Gender, @Personality, @Laziness, @Age)", connection);
+                cmd.Parameters.AddWithValue("@Email", mail);
+                cmd.Parameters.AddWithValue("@Name", name_input.Text);
+                cmd.Parameters.AddWithValue("@Breed", breed_combo.SelectedItem.ToString());
+                cmd.Parameters.AddWithValue("@Weight", weight_combo.SelectedItem.ToString());
+                cmd.Parameters.AddWithValue("@Gender", gender_combo.SelectedItem.ToString());
+                cmd.Parameters.AddWithValue("@Personality", personality_combo.SelectedItem.ToString());
+                cmd.Parameters.AddWithValue("@Laziness", laziness_combo.SelectedItem.ToString());
+                cmd.Parameters.AddWithValue("@Age", age_combo.SelectedItem.ToString());
+                try
+                {
+                    cmd.ExecuteNonQuery();
+                }
+                catch (SqlException sqlEX)
+                {
+                    MessageBox.Show(sqlEX.Message);
+                }
+                connection.Close();
+
+            }
+            Intermediate_page Check = new Intermediate_page(mail);
             Check.Show();
-            //Close();
+            Close();
         }
 
         private void Cat_Load(object sender, EventArgs e)

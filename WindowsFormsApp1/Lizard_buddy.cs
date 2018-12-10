@@ -12,9 +12,10 @@ namespace WindowsFormsApp1
 {
     public partial class Lizard_buddy : Form
     {
-        public Lizard_buddy()
+        public Lizard_buddy(string email)
         {
             InitializeComponent();
+            lizard_email_text_box.Text = email;
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

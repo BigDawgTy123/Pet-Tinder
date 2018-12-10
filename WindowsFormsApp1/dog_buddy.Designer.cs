@@ -32,7 +32,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dog_email_textbox = new System.Windows.Forms.TextBox();
-            this.home_button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,30 +65,17 @@
             this.dog_email_textbox.TabIndex = 2;
             this.dog_email_textbox.TextChanged += new System.EventHandler(this.dog_email_textbox_TextChanged);
             // 
-            // home_button
-            // 
-            this.home_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(85)))), ((int)(((byte)(92)))));
-            this.home_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.home_button.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.home_button.Location = new System.Drawing.Point(1, 591);
-            this.home_button.Name = "home_button";
-            this.home_button.Size = new System.Drawing.Size(75, 23);
-            this.home_button.TabIndex = 3;
-            this.home_button.Text = "<<< Back";
-            this.home_button.UseVisualStyleBackColor = false;
-            this.home_button.Click += new System.EventHandler(this.home_button_Click);
-            // 
             // Dog_buddy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(473, 615);
-            this.Controls.Add(this.home_button);
             this.Controls.Add(this.dog_email_textbox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Dog_buddy";
-            this.Text = "Form1";
+            this.Text = "Dog Buddy";
+            this.Load += new System.EventHandler(this.Dog_buddy_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -101,6 +87,5 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox dog_email_textbox;
-        private System.Windows.Forms.Button home_button;
     }
 }

@@ -88,7 +88,14 @@ namespace WindowsFormsApp1
 
         private void back_button_Click(object sender, EventArgs e)
         {
-            
+            Buying_Dog Check = new Buying_Dog();
+            Check.Show();
+            Close();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

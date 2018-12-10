@@ -42,8 +42,8 @@
             this.laziness_combo = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.age_combo = new System.Windows.Forms.ComboBox();
+            this.weight_combo = new System.Windows.Forms.ComboBox();
             this.cat_back_button = new System.Windows.Forms.Button();
             this.name_input = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -234,11 +234,11 @@
             this.label8.Text = "Cat";
             this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
-            // comboBox1
+            // age_combo
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.age_combo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.age_combo.FormattingEnabled = true;
+            this.age_combo.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
@@ -261,25 +261,25 @@
             "20",
             "21",
             "22"});
-            this.comboBox1.Location = new System.Drawing.Point(157, 211);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(68, 33);
-            this.comboBox1.TabIndex = 21;
+            this.age_combo.Location = new System.Drawing.Point(157, 211);
+            this.age_combo.Name = "age_combo";
+            this.age_combo.Size = new System.Drawing.Size(68, 33);
+            this.age_combo.TabIndex = 21;
             // 
-            // comboBox2
+            // weight_combo
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.weight_combo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.weight_combo.FormattingEnabled = true;
+            this.weight_combo.Items.AddRange(new object[] {
             "1 - 5 lbs",
             "6 - 10 lbs",
             "11 - 15 lbs",
             "15 - 20 lbs"});
-            this.comboBox2.Location = new System.Drawing.Point(183, 310);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(98, 33);
-            this.comboBox2.TabIndex = 22;
-            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged_1);
+            this.weight_combo.Location = new System.Drawing.Point(183, 310);
+            this.weight_combo.Name = "weight_combo";
+            this.weight_combo.Size = new System.Drawing.Size(98, 33);
+            this.weight_combo.TabIndex = 22;
+            this.weight_combo.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged_1);
             // 
             // cat_back_button
             // 
@@ -323,8 +323,8 @@
             this.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.ClientSize = new System.Drawing.Size(475, 615);
             this.Controls.Add(this.cat_back_button);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.weight_combo);
+            this.Controls.Add(this.age_combo);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.laziness_combo);
             this.Controls.Add(this.breed_combo);
@@ -363,8 +363,8 @@
         private System.Windows.Forms.ComboBox laziness_combo;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox age_combo;
+        private System.Windows.Forms.ComboBox weight_combo;
         private System.Windows.Forms.Button cat_back_button;
         private System.Windows.Forms.TextBox name_input;
         private System.Windows.Forms.Label label1;

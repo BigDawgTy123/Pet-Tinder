@@ -32,7 +32,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lizard_email_text_box = new System.Windows.Forms.TextBox();
-            this.home_button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -65,30 +64,16 @@
             this.lizard_email_text_box.TabIndex = 2;
             this.lizard_email_text_box.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // home_button
-            // 
-            this.home_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(85)))), ((int)(((byte)(92)))));
-            this.home_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.home_button.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.home_button.Location = new System.Drawing.Point(2, 589);
-            this.home_button.Name = "home_button";
-            this.home_button.Size = new System.Drawing.Size(75, 23);
-            this.home_button.TabIndex = 3;
-            this.home_button.Text = "<<< Home";
-            this.home_button.UseVisualStyleBackColor = false;
-            this.home_button.Click += new System.EventHandler(this.home_button_Click);
-            // 
             // Lizard_buddy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(473, 615);
-            this.Controls.Add(this.home_button);
             this.Controls.Add(this.lizard_email_text_box);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Lizard_buddy";
-            this.Text = "Form3";
+            this.Text = "Lizard Buddy";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -100,6 +85,5 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox lizard_email_text_box;
-        private System.Windows.Forms.Button home_button;
     }
 }

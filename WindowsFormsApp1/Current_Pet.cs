@@ -17,6 +17,7 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
             email = owner_email;
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -24,6 +25,26 @@ namespace WindowsFormsApp1
             Intermediate_page Check = new Intermediate_page(email);
             Check.Show();
             Close();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void animal_selection_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
