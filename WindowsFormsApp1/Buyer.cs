@@ -7,15 +7,49 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Data.SqlClient;
+using System.Data.Common;
+using System.Configuration;
 namespace WindowsFormsApp1
 {
     public partial class Buyer : Form
     {
+        int count = new int();
         public Buyer()
         {
             InitializeComponent();
+            DataTable dogs = new DataTable();
+            string provider = ConfigurationManager.AppSettings["provider"];
+            string connectionString = ConfigurationManager.AppSettings["connectionString"];
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                using (SqlDataAdapter adapter = new SqlDataAdapter("Select * FROM doggos", connection))
+                {
+                    adapter.Fill(dogs);
+                    count += dogs.Rows.Count;
+                }
+            }
+            DataTable cats = new DataTable();
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                using (SqlDataAdapter adapter = new SqlDataAdapter("Select * FROM Cat", connection))
+                {
+                    adapter.Fill(cats);
+                    count += cats.Rows.Count;
+                }
+            }
+            DataTable lizards = new DataTable();
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                using (SqlDataAdapter adapter = new SqlDataAdapter("Select * FROM Lizard", connection))
+                {
+                    adapter.Fill(lizards);
+                    count += lizards.Rows.Count;
+                }
+            }
+            textBox1.Text = count.ToString();
         }
+
 
         private void label2_Click(object sender, EventArgs e)
         {

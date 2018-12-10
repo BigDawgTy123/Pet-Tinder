@@ -35,13 +35,15 @@
             this.to_buying_dog_page = new System.Windows.Forms.Button();
             this.to_buying_cat_page = new System.Windows.Forms.Button();
             this.to_buying_lizard_page = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(2, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(478, 620);
             this.pictureBox1.TabIndex = 0;
@@ -115,11 +117,33 @@
             this.to_buying_lizard_page.UseVisualStyleBackColor = false;
             this.to_buying_lizard_page.Click += new System.EventHandler(this.to_buying_lizard_page_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(85)))), ((int)(((byte)(92)))));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.Location = new System.Drawing.Point(37, 498);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(319, 38);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Animals in database:";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(362, 498);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(101, 45);
+            this.textBox1.TabIndex = 8;
+            // 
             // Buyer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(475, 615);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.to_buying_lizard_page);
             this.Controls.Add(this.to_buying_cat_page);
             this.Controls.Add(this.to_buying_dog_page);
@@ -142,5 +166,7 @@
         private System.Windows.Forms.Button to_buying_dog_page;
         private System.Windows.Forms.Button to_buying_cat_page;
         private System.Windows.Forms.Button to_buying_lizard_page;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
